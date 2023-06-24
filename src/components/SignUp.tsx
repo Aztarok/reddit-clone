@@ -18,7 +18,7 @@ const SignUp = () => {
                 <UserAuthForm />
 
                 <p className="px-8 text-center text-sm text-zinc-700">
-                    Already a Breadittor?{" "}
+                    Already a Breaditor?{" "}
                     <Link
                         href="/sign-in"
                         className="hover:text-zinc-800 text-sm underline-offset-4"
