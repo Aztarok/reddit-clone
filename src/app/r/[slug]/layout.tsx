@@ -5,12 +5,13 @@ import { format } from "date-fns";
 import SubscribeLeaveToggle from "@/components/SubscribeLeaveToggle";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/Button";
+import { ReactNode } from "react";
 
 const Layout = async ({
     children,
     params: { slug }
 }: {
-    children: React.ReactNode;
+    children: ReactNode;
     params: { slug: string };
 }) => {
     const session = await getAuthSession();

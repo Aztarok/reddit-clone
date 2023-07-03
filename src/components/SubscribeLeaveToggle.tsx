@@ -15,11 +15,11 @@ interface SubscribeLeaveToggleProps {
     isSubscribed: boolean;
 }
 
-const SubscribeLeaveToggle: FC<SubscribeLeaveToggleProps> = ({
+const SubscribeLeaveToggle = ({
     subredditId,
     isSubscribed,
     subredditName
-}) => {
+}: SubscribeLeaveToggleProps) => {
     const { loginToast } = useCustomToast();
     const router = useRouter();
 
